@@ -1,0 +1,81 @@
+{% extends 'partials/base.html'%}
+{% block title %} pagina boa tarde {% endblock %}
+{% block content %}
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0px;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #007BFF;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #f1f7ff;
+}
+caption {
+    caption-side: top;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+</style>
+
+<table>
+    <caption>Tabela de Exemplo</caption>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Ana</td>
+            <td>25</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>João</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Maria</td>
+            <td>22</td>
+            <td>Belo Horizonte</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Pedro</td>
+            <td>27</td>
+            <td>Curitiba</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
